@@ -58,7 +58,6 @@ function setTimer() {
     var timerInterval = setInterval(function(){
         timeLeft--;
         timeLeftEl.text("Time Left: ");
-        console.log(timeLeft);
         if(timeLeft <= 0) {
             clearInterval(timerInterval);
             quizOver();
