@@ -51,7 +51,6 @@ function correctOrWrong() {
     } else {
         return;
     }
-
 }
 //Replace placeholder 'Time Left: 20' string and begins counting down from 20
 function setTimer() {
@@ -103,7 +102,6 @@ function question1() {
         choiceEl.addClass('btn' + i.toString())
         rootEl.append(choiceEl);
       }
-
 
     $(".btn0").on('click', function(event){
         event.stopPropagation();
@@ -339,6 +337,7 @@ function quizOver() {
 
 function displayHighscores() {
     rootEl.children().remove();
+    highscoreListEl.children().remove();
     var highscoreTitleEl = $('<h1>');
     var startOverBtn = $('<button>');
     highscoreTitleEl.text('Highscores');
